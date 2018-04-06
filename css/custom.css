@@ -1,20 +1,50 @@
+:root {
+  height: 100%;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: 'Source Serif Pro', serif;
+}
+@media screen and (min-width: 600px) {
+  :root {
+    font-size: 20px;
+  }
+}
+
 body {
-  background-color: #292724;
-  color: #fff;
+  height: 100%;
+  background: orange url("http://www.sinpecado.pt/documentos/image/blog/neipa2017.jpg") no-repeat center center;
+  background-size: cover;
 }
-
-.logo {
+body::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
   width: 100%;
-  height: auto;
-  image-rendering: -moz-crisp-edges;         /* Firefox */
-  image-rendering:   -o-crisp-edges;         /* Opera */
-  image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
-  image-rendering: crisp-edges;
-  -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+  background-image: linear-gradient(40deg, black, orange 50%);
+  opacity: 0.5;
+  z-index: -1;
 }
 
-.is-centered {
-  text-align: center;
+._skewed {
+  transform: skewY(-12deg);
+}
+
+._text-small {
+  font-size: 0.7rem;
+}
+
+._margin-top-xs {
+  margin-top: 30px;
+}
+
+h1, .h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 3rem;
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
 .sr-only {
@@ -28,13 +58,51 @@ body {
   border: 0;
 }
 
-@media (min-width: 500px) {
-  .inner-container {
-    max-width: 500px;
-    margin: 0 auto;
-  }
+.link-default {
+  color: inherit;
+  text-decoration: none;
+}
+.link-default:hover, .link-default:focus {
+  text-decoration: underline overline;
+}
 
-  .logo {
-    max-width: 450px;
+.button-default {
+  padding: 3px 8px;
+  background: #2d2b29;
+  text-decoration: none;
+  color: #ffffff;
+}
+.button-default + .button-default {
+  margin-left: 6px;
+}
+.button-default.-facebook:hover {
+  background: #3b5998;
+}
+.button-default.-instagram:hover {
+  background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+}
+
+.site-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.site-wrapper > .logo {
+  max-width: 80px;
+  margin: 0 auto auto 30px;
+}
+@media screen and (min-width: 600px) {
+  .site-wrapper > .logo {
+    max-width: 200px;
+    margin: 0 80px auto auto;
+  }
+}
+.site-wrapper > .content {
+  margin: auto 30px 60px 30px;
+}
+@media screen and (min-width: 600px) {
+  .site-wrapper > .content {
+    margin: auto 50% 120px 80px;
+    max-width: 400px;
   }
 }
