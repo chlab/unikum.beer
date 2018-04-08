@@ -37,44 +37,50 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container is-centered">
-    <div class="inner-container">
+  <div class="container">
+    <div class="logo flex-item">
       <h1 class="sr-only">UNIKUM brewery</h1>
 
-      <img src="./images/logo.png" alt="UNIKUM Logo" class="logo">
+      <img src="./images/logo.png" alt="UNIKUM Logo" class="logo__image">
+    </div>
 
+    <div class="flex-item spacer"></div>
+
+    <div class="claim flex-item">
       <p>
         Wir sind eine Kleinstbrauerei in Liebefeld.
         Wir brauen Biere, die wir selber gerne trinken und teilen:
         hochwertig. hopfig. stark. kreativ. Wir sind Unikum.
       </p>
+    </div>
 
+    <div class="contact flex-item">
       <p>Hessstrasse 27a<br />
         3097 Liebefeld</p>
 
       <p>
-         <a href="https://www.facebook.com/unikumbrewing/">facebook</a>
-         - <a href="https://www.instagram.com/unikumbrewing/">instagram</a>
-         <br />
-         <script type="text/javascript" language="javascript">
-           { coded = "FGgT@e0goeF.Ixxm"
-             key = "vg601NVFhqlRQ25eMw3JXpDEbYTjdcUx9SsL7rtaIzZk8HKiOn4ACmyGBPfoWu"
-             shift=coded.length
-             link=""
-             for (i=0; i<coded.length; i++) {
-               if (key.indexOf(coded.charAt(i))==-1) {
-                 ltr = coded.charAt(i)
-                 link += (ltr)
-               }
-               else {
-                 ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
-                 link += (key.charAt(ltr))
-               }
+       <a href="https://www.facebook.com/unikumbrewing/">facebook</a>
+       - <a href="https://www.instagram.com/unikumbrewing/">instagram</a>
+       <br />
+       <script type="text/javascript" language="javascript">
+         { coded = "FGgT@e0goeF.Ixxm"
+           key = "vg601NVFhqlRQ25eMw3JXpDEbYTjdcUx9SsL7rtaIzZk8HKiOn4ACmyGBPfoWu"
+           shift=coded.length
+           link=""
+           for (i=0; i<coded.length; i++) {
+             if (key.indexOf(coded.charAt(i))==-1) {
+               ltr = coded.charAt(i)
+               link += (ltr)
              }
-           document.write("<a href='mailto:"+link+"'>"+link+"</a>")
+             else {
+               ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+               link += (key.charAt(ltr))
+             }
            }
-         </script><noscript>mail [ät] unikum [punkt] beer</noscript>
-       </p>
+         document.write("<a href='mailto:"+link+"'>"+link+"</a>")
+         }
+       </script><noscript>mail [ät] unikum [punkt] beer</noscript>
+      </p>
     </div>
   </div>
 
