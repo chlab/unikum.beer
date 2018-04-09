@@ -20,10 +20,13 @@ html, body, .container {
   margin: 0 .5em;
 }
 
+.logo {
+  height: 40%;
+}
+
 .logo__image {
   width: auto;
-  max-height: 300px;
-  height: auto;
+  height: 100%;
   image-rendering: -moz-crisp-edges;         /* Firefox */
   image-rendering:   -o-crisp-edges;         /* Opera */
   image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
