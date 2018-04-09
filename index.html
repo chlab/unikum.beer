@@ -80,7 +80,23 @@
        </script><noscript>mail [ät] unikum [punkt] beer</noscript>
       </p>
     </div>
+
+    <div class="flex-item image-strip" id="instafeed"></div>
   </div>
+
+<script type="text/javascript" src="./js/instafeed.min.js"></script>
+<script type="text/javascript">
+  var feed = new Instafeed({
+    get: 'user',
+    userId: '7443215625',
+    clientId: '430f95ccdc0f4f068aa3822850b26f62',
+    accessToken: '7443215625.1677ed0.a44d045b52244f75a250fab64735ddab',
+    resolution: 'low_resolution',
+    limit: 5,
+    template: '<a href="{{link}}" class="thumbnail"><img src="{{image}}" class="thumbnail__image" /></a>'
+  });
+  feed.run();
+</script>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
