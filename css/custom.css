@@ -14,7 +14,6 @@ html, body, .container {
 
 .flex-item {
   text-align: center;
-  flex-grow: 1;
 }
 
 .claim {
@@ -51,11 +50,5 @@ html, body, .container {
 
   .logo {
     /* max-width: 350px; */
-  }
-}
-
-@media (min-height: 500px) {
-  .flex-item.spacer {
-    flex-grow: 3;
   }
 }
