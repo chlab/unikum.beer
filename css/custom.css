@@ -42,9 +42,14 @@ body::before {
 
 h1, .h1 {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: normal;
   text-transform: uppercase;
+}
+@media screen and (min-width: 600px) {
+  h1, .h1 {
+    font-size: 3rem;
+  }
 }
 
 .sr-only {
@@ -86,8 +91,10 @@ h1, .h1 {
   display: flex;
   flex-direction: column;
   height: 100%;
+  overflow: scroll;
 }
 .site-wrapper > .logo {
+  min-height: 76px;
   max-width: 80px;
   margin: 0 auto auto 30px;
 }
