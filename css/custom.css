@@ -1,7 +1,7 @@
 :root {
   height: 100%;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 18px;
   font-family: 'Source Serif Pro', serif;
 }
 @media screen and (min-width: 600px) {
@@ -12,20 +12,8 @@
 
 body {
   height: 100%;
-  background: #ffa500 url("../images/background.jpg") no-repeat center right;
-  background-size: cover;
-}
-body::before {
-  display: block;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-image: linear-gradient(40deg, black, #ffa500 50%);
-  opacity: 0.5;
-  z-index: -1;
+  background-image: linear-gradient(168deg, #e35d84 70%, #e9863e 70% 80%, #64b9bd 80% 90%, #3e142c 90% 100%);
+  background-repeat: no-repeat;
 }
 
 ._skewed {
@@ -42,7 +30,7 @@ body::before {
 
 h1, .h1 {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: normal;
   text-transform: uppercase;
 }
@@ -93,23 +81,19 @@ h1, .h1 {
   height: 100%;
   overflow: scroll;
 }
-.site-wrapper > .logo {
+
+.site-wrapper > .content {
+  margin: auto 5% 50% 5%;
+}
+
+.site-wrapper > .content > .logo {
   min-height: 76px;
   max-width: 80px;
-  margin: 0 auto auto 30px;
 }
-@media screen and (min-width: 600px) {
-  .site-wrapper > .logo {
-    max-width: 200px;
-    margin: 0 80px auto auto;
-  }
-}
-.site-wrapper > .content {
-  margin: auto 30px 60px 30px;
-}
+
 @media screen and (min-width: 600px) {
   .site-wrapper > .content {
-    margin: auto 50% 120px 80px;
-    max-width: 400px;
+    margin: auto 10px 100px 30px;
+    max-width: 500px;
   }
 }
