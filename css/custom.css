@@ -72,6 +72,9 @@ body {
   position: relative;
   margin-top: 30px;
 }
+.text-content p {
+  line-height: 1.4rem;
+}
 
 .logo {
   color: black;
