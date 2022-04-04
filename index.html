@@ -50,10 +50,13 @@
         <div class="footer">
           <p class="text-large">Unikum beer in cans coming soon!</p>
           <p class="text-small">Meanwhile, follow us on</p>
-          <p class="">
+          <p>
             <a class="link" href="https://www.facebook.com/unikumbrewing">Facebook</a> or
             <a class="link" href="https://www.instagram.com/unikumbrewing">Instagram</a>
           </p>
+          <div id="cntct">
+            <p class="text-small">or contact us at</p>
+          </div>
         </div>
       </div>
     </div>
@@ -64,5 +67,21 @@
 
   </div>
 
+  <script>
+    // make life hard for bots
+    var user = 'unikum';
+    var dom = 'ikmail';
+    var link = document.createElement('a');
+
+    var linkTpl = atob('bWFpbHRvOiV1c2VyJUAlZG9tYWluJS5jb20=');
+    var href = linkTpl.replace('%user%', user).replace('%domain%', dom);
+    var textTpl = atob('JXVzZXIlQCVkb21haW4lLmNvbQ==');
+    var text = textTpl.replace('%user%', user).replace('%domain%', dom);
+
+    link.setAttribute('href', href);
+    link.setAttribute('class', 'link');
+    link.innerText = text;
+    document.getElementById('cntct').appendChild(link);
+  </script>
 </body>
 </html>
