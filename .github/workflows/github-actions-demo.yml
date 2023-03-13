@@ -1,0 +1,9 @@
+name: Build
+run-name: Build
+on: [push]
+jobs:
+  Build:
+    runs-on: node:lts-alpine
+    steps:
+      - run: npm ci
+      - run: npm run deploy
