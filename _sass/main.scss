@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+// Customization
+
+// You can easily customize Bulma with your own variables.
+// Just uncomment the following block to see the result.
+
+/*
+// 1. Import the initial variables
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+// 2. Set your own initial variables
+// Update the blue shade, used for links
+$blue: #06bcef;
+// Add pink and its invert
+$pink: #ff8080;
+$pink-invert: #fff;
+// Update the sans-serif font family
+$family-sans-serif: "Helvetica", "Arial", sans-serif;
+
+// 3. Set the derived variables
+// Use the new pink as the primary color
+$primary: $pink;
+$primary-invert: $pink-invert;
+
+// 4. Import the rest of Bulma
+*/
+
+$family-sans-serif: 'Brezel Grotesk';
+
+@import "../node_modules/bulma/bulma";
+
+@font-face {
+    font-family: 'Brezel Grotesk';
+    src: url('../fonts/brezel-grotesk/BrezelGrotesk-Regular.eot');
+    src: url('../fonts/brezel-grotesk/BrezelGrotesk-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/brezel-grotesk/BrezelGrotesk-Regular.woff2') format('woff2'),
+        url('../fonts/brezel-grotesk/BrezelGrotesk-Regular.woff') format('woff'),
+        url('../fonts/brezel-grotesk/BrezelGrotesk-Regular.svg#BrezelGrotesk-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    background: rgb(207, 75, 66);
+    background: radial-gradient(circle, rgba(207, 75, 66, 1) 40%, rgba(242, 204, 92, 1) 100%);
+    min-height: 100vh;
+    width: 100%;
+    background: url('../img/oliang-full.jpg');
+    background-size: cover;
+}
+
+.logo {
+    color: black;
+    height: 160px;
+    width: 160px;
+}
+
+.map-controls {
+    height: 120px;
+    overflow: scroll;
+}
+
+#pos-map {
+    min-height: 300px;
+}
+
+.calendar {
+    max-height: 60px;
+    border-radius: 0;
+}
+
+.notification {
+    border-radius: 0;
+}
